@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+    --vertical-nav-width: 232px;
+    --now-playing-bar-height: 11vh;
+    width: 100vw;
+    height: 100vh;
+    background-color: darkgray;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: grid;
+    grid-template-areas: "nav-bar main-view" "now-playing-bar now-playing-bar";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    position: relative;
+    scrollbar-width: none;
+    font-size: 16px;
+  }
+
+  .navbar {
+    grid-area: nav-bar;
+    width: var(--vertical-nav-width);
+    height: 100%;
+    min-height: 100%;
+    background-color: #000;
+    padding-top: 24px;
+    padding-bottom: var(--now-playing-bar-height);
+  }
+
+  .catenav {
+    color: #c4c4c4;
+    padding: 18px 12px;
+  }
+
+  .cateselect  {
+    color: #fff;
+    background-color: rgba(50, 50, 50, 0.6);
+    border-radius: 5px;
+  }
+
+  .cateselect2  {
+    padding: 5px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0;
+  }
+
+  .cateselect3 .icon {
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    margin-right: 10px;
+  }
+
+  .cateselect4 .icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .playlists {
+    color: #c4c4c4;
+    padding: 18px 12px;
+  }
